@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="scaffolded-by" content="https://github.com/google/stagehand">
+    <title>Mendeleev Search</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="img/icon/favicon-16x16.png" sizes="16x16"> 
+    <link rel="icon" type="image/png" href="img/icon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/icon/favicon-96x96.png" sizes="96x96">
+    <script defer src="dart/main.dart.js" type="application/javascript"></script>
+</head>
+
+<body>
+  <div id="icon">
+    <div id="info"><span id="creator">made by MP</span></div>
+    <img src="img/ic_person_outline.svg" height="48px" width="48px">
+  </div>
+  <div id="placeholder"></div>
+  <div id="overlay" class="transition" style="display: none"></div>
+  <header id="header">
+    <nav>
+      <div class="container">
+        <form>
+          <input type="text" id="search-background" autocomplete="off" class="input-sizing" readonly>
+          <input type="text" id="search" autocomplete="off" placeholder="search elements" class="input-sizing box-shadow animate">
+          <div id="input-result-container">
+            <div id="suggestion-container">
+              <ul id="suggestions-list" class="list">
+                <li id="suggestion-list-element1" class="suggestion-box border animate" style="display: none"><a id="suggestion1" class="suggestion"></a></li>
+                <li id="suggestion-list-element2" class="suggestion-box border animate" style="display: none"><a id="suggestion2" class="suggestion"></a></li>
+                <li id="suggestion-list-element3" class="suggestion-box border animate" style="display: none"><a id="suggestion3" class="suggestion"></a></li>
+                <li id="suggestion-list-element4" class="suggestion-box border animate" style="display: none"><a id="suggestion4" class="suggestion"></a></li>
+                <li id="suggestion-list-element5" class="suggestion-box animate" style="display: none"><a id="suggestion5" class="suggestion"></a></li>
+              </ul>
+            </div>
+          </div>
+        </form>
+      </div>
+    </nav>
+    <div class="container" id="lower-box">
+      <div id="box">
+        <div id="inner-box">
+          <div id="inner-inner-left-box">
+            <div id="inner-inner-inner-upper-box">
+              <sup id="atomic-number"></sup>
+              <span id="symbol" class="copy"></span>
+            </div>
+            <div id="inner-inner-inner-lower-box">
+              <span id="name" class="copy"></span>
+              <div id="group-box" class="position-right">
+                group:
+                <span id="group"></span>
+              </div>
+              <div id="period-box" class="position-right">
+                period:
+                <span id="period"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="small-container">
+    <ul id="element-list" class="list">
+      <li class="list-item border">
+        <span class="category">phase:</span>
+        <span class="copy value" id="phase"></span>
+      </li>
+      <li class="list-item border">
+        <span class="category">element category:</span>
+        <span class="copy value" id="element-category"></span>
+      </li>
+      <li class="list-item border">
+        <span class="category">bonding type:</span>
+        <span class="copy value" id="bonding-type"></span>
+      </li>
+      <li class="list-item border">
+        <span class="category">atom weight:</span>
+        <span class="copy value" id="atomic-weight"></span>
+      </li>
+      <li class="list-item border">
+        <span class="category">melting point:</span>
+        <span class="copy value" id="melting-point"></span>
+      </li>
+      <li class="list-item border">
+        <span class="category">boiling point:</span>
+        <span class="copy value" id="boiling-point"></span>
+      </li>
+      <li class="list-item border">
+        <span class="category">year discovered:</span>
+        <span class="copy value" id="year-discovered"></span>
+      </li>
+    </ul>
+  </section>
+  <button id="temp-btn" type="button">convert unit</button>
+</body>
+</html>
