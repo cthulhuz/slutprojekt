@@ -339,6 +339,7 @@ ul, menu, dir {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
+  display: inline-block;
   border-radius: 4px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   position: absolute;
@@ -515,7 +516,7 @@ ul, menu, dir {
 }
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
   .small-container {
-    width: 600px;
+    width: 600px;t
     margin-top: -50px;
   }
 
