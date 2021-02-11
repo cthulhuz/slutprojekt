@@ -347,7 +347,6 @@ ul, menu, dir {
   right: 10px;
   background-color: #689F38;
   height: 20px;
-  width: 200px;
   opacity: 0;
   padding: 15px 20px;
   user-select: none;
@@ -502,11 +501,10 @@ ul, menu, dir {
   }
 
   #info {
+    display: inline-block;
     z-index: 6;
     right: 5px;
     bottom: 60px;
-    width: 180px;
-    height: 20px;
     padding: 10px 12.5px;
   }
 
